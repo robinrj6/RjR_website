@@ -1,0 +1,113 @@
+@media only screen and (max-width:1372px) {
+    .nav-link {
+        margin-left: 50rem;
+    }
+    .nav-link li {
+        padding: 0 4px;
+    }
+    .section_home {
+        min-height: 10vh;
+    }
+    .section_about {
+        min-height: 10vh;
+    }
+    .section_skills {
+        min-height: 10vh;
+    }
+    .section_projects {
+        min-height: 10vh;
+    }
+    .section_contact {
+        min-height: 10vh;
+    }
+}
+
+@media only screen and (max-width:1152px) {
+    .nav-link {
+        margin-left: 40rem;
+    }
+    .nav-link li {
+        padding: 0 4px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .nav-link {
+        margin-left: 35rem;
+        font-size: 90%;
+    }
+    .nav-link li {
+        padding: 0 4px;
+    }
+}
+
+@media only screen and (max-width:882px) {
+    .nav-link li {
+        display: none;
+        margin-left: 5rem;
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    body {
+        font-size: 80%;
+    }
+    .nav-link {
+        margin-left: 25rem;
+        font-size: 90%;
+    }
+    .flexbox {
+        display: block;
+    }
+    .section_home {
+        padding: 5.4em 0;
+    }
+    .certifications ul {
+        list-style: circle;
+    }
+}
+
+@media only screen and (max-width:501px) {
+    .nav-link {
+        margin-left: 15rem;
+    }
+    .nav-link li a {
+        font-size: 90% !important;
+    }
+    .nav-link {
+        margin-top: 8px;
+    }
+    h1,
+    .cse {
+        font-size: clamp(1rem, 2vw + 1rem, 2rem);
+    }
+}
+
+@media only screen and (max-width:443px) {
+    .mobile-nav-icon {
+        margin-left: 70%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .nav-link {
+        margin-left: 10rem;
+    }
+    h1,
+    .cse {
+        font-size: clamp(1rem, 1vw + 1rem, 2rem);
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .nav-link {
+        margin-left: 5rem;
+    }
+    h1,
+    .cse {
+        font-size: clamp(.5rem, 1vw + 1rem, 1rem);
+    }
+}

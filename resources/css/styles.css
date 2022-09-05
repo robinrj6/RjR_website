@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    /* background-color: rgb(0, 0, 51); */
+    background-color: rgb(0, 0, 51);
+    /*https://www.w3schools.com/css/css_grid.asp*/
+    font-family: 'Georama', sans-serif;
+    color: aqua;
+    text-rendering: optimizeLegibility;
+    /* overflow-x: hidden; */
+}
+
+
+/* Mobile navi */
+
+.mobile-nav-icon {
+    margin-top: 10px;
+    margin-left: 80%;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    padding-left: 10px;
+    font-size: 200%;
+    color: aqua;
+}
+
+.mobile-nav-icon i:hover {
+    color: orange;
+}
+
+
+/* Sticky navi */
+
+.sticky::before {
+    padding-left: 1em;
+    padding-top: .5em;
+    font-size: 150%;
+    font-weight: 900;
+    content: "RJR";
+    float: left;
+    color: rgb(22, 0, 121);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ccc;
+    /* box-shadow: 0 2px 2px #efefef; */
+    z-index: 9999;
+}
+
+.sticky .nav-link {
+    margin-top: 18px;
+}
+
+.sticky .nav-link li a:link,
+.sticky .nav-link li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .nav-link li a:hover,
+.sticky .nav-link li a:active {
+    padding-bottom: 11px;
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+
+/* body */
+
+
+/* icons */
+
+i {
+    color: orange;
+    /* color: rgb(132, 0, 255); */
+}
+
+
+/* navigation */
+
+nav {
+    position: fixed;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+}
+
+header {
+    position: relative;
+}
+
+.nav-link {
+    position: fixed;
+    margin-left: 60rem;
+    list-style: none;
+    margin-top: 45px;
+}
+
+.nav-link li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: aqua;
+    text-transform: uppercase;
+    font-family: 'Georama', sans-serif;
+    transition: border-bottom 0.2s;
+    transition: color 0.2s;
+}
+
+.nav-link li a:hover,
+.nav-link li a :active {
+    padding-bottom: 4px;
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+
+/* container */
+
+.container {
+    padding: 0 1em;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* section Home */
+
+.section_home {
+    min-height: 90vh;
+    padding: 10em 0;
+}
+
+.rjr {
+    margin-top: 10em;
+    margin-left: 2em;
+}
+
+h1 {
+    display: grid;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    width: max-content;
+    text-transform: uppercase;
+}
+
+.cse {
+    font-size: clamp(1rem, 3vw + 1rem, 2.5rem);
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hai::before {
+    background: rgb(0, 0, 51);
+    /* animation: typewriter 1s steps(3) 0s forwards */
+    animation: typewriter .7s 0s forwards;
+}
+
+.hai::after {
+    width: 0.150em;
+    /* background: beige; */
+    animation: typewriter .7s 0s forwards, blink .5s steps(4) infinite;
+}
+
+.name::before {
+    background: rgb(0, 0, 51);
+    animation: typewriter2 2s 1.2s forwards;
+}
+
+.name::after {
+    width: 0.150em;
+    /* background: beige; */
+    animation: typewriter2 2s 1.2s forwards, blink .5s steps(18) infinite;
+}
+
+.name {
+    transition: color 0.3s;
+}
+
+.name:hover {
+    color: orange;
+}
+
+.cse::before {
+    background: rgb(0, 0, 51);
+    animation: typewriter3 2s 3s forwards;
+}
+
+.cse::after {
+    width: 0.150em;
+    /* background: beige; */
+    background: rgb(0, 0, 51);
+    animation: typewriter3 2s 3s forwards, blink .5s steps(25) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+        visibility: hidden;
+    }
+}
+
+@keyframes typewriter2 {
+    to {
+        left: 100%;
+        visibility: hidden;
+    }
+}
+
+@keyframes typewriter3 {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        background: rgb(0, 0, 51);
+    }
+    to {
+        background: transparent;
+    }
+}
+
+.heading {
+    font-size: clamp(1em, 1em+4vw, 3em);
+    padding-top: 1em;
+    padding-right: 5em;
+    border-bottom: 3px solid orange;
+}
+
+
+/* section about */
+
+.section_about {
+    min-height: 90vh;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flextrap {
+    display: flex;
+}
+
+.content_about {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content_about p {
+    margin: 3em 1em 0 2em;
+}
+
+.resume {
+    margin: 1rem 3rem;
+    color: aqua;
+    width: 5rem;
+    height: 3rem;
+    background-color: rgb(0, 0, 51);
+    border-radius: 8px;
+    border: 2px solid aqua;
+    color: rgb(255, 166, 0);
+    transition: font-size .3s, color .1s, text-shadow .3s, box-shadow .3s;
+}
+
+.resume:hover,
+.resume:focus {
+    font-size: 100%;
+    color: rgb(255, 166, 0);
+    text-shadow: 0px 10px 5px rgba(255, 166, 0, 0.692);
+    box-shadow: inset 0 0 30px aqua, 0px 6px 88px 20px rgba(0, 255, 255, 0.575);
+}
+
+.image_about img {
+    margin: 3em 1em 0 2em;
+    width: 200px;
+    height: auto;
+    object-fit: fill;
+    border: 2px solid aqua;
+    box-shadow: 0 4px 8px 0 rgb(0, 255, 255);
+    transition: box-shadow 0.3s;
+}
+
+.image_about img:hover {
+    box-shadow: 0 4px 500px 25px rgba(0, 255, 255, 0.486), 0 6px 500px 20px rgba(0, 255, 255, 0.308);
+}
+
+
+/* section skills */
+
+.section_skills {
+    min-height: 90vh;
+}
+
+.content_skills {
+    line-height: 2;
+    margin: 0 auto;
+}
+
+.content_skills ul {
+    padding-left: 1em;
+    list-style: none;
+}
+
+.content_skills li {
+    padding-left: 2rem;
+}
+
+.certifications {
+    line-height: 2;
+}
+
+.certifications ul {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.certifications li {
+    padding-left: 3rem;
+}
+
+
+/* section projects */
+
+.section_projects {
+    min-height: 90vh;
+}
+
+.projects {
+    text-align: center;
+}
+
+.section_projects ul {
+    list-style: none;
+    padding-left: 1em;
+    padding-top: 2.5em;
+    line-height: 2;
+}
+
+.section_projects ul span {
+    padding-left: 2rem;
+    color: orange;
+}
+
+
+/* section contact */
+
+.section_contact {
+    min-height: 90vh;
+}
+
+.contact_box {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: rgba(212, 0, 255, 0.541);
+    font-size: 110%;
+    padding: 2em 2em;
+}
+
+input[type=text],
+textarea,
+input[type=email] {
+    width: 100%;
+    height: auto;
+    font-size: 100%;
+    color: rgb(0, 0, 51);
+    font-family: 'Georama', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    caret-color: orange;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    font-family: 'Georama', sans-serif;
+    text-transform: uppercase;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type=submit]:hover {
+    color: rgb(0, 0, 51);
+    background-color: rgb(83, 245, 245);
+}
